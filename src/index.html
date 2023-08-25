@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav>
-      <div class="section nav__wrapper flex-row">
+      <div class="section--center nav__wrapper flex-row">
         <span class="h3 h3--logo"
           ><a href="#hero" class="link link--logo">Misty Becker</a></span
         >
@@ -22,16 +22,16 @@
 
     <main>
       <section class="hero" id="hero">
-        <div class="section hero__wrapper">
-          <p class="display2">Hello!</p>
+        <div class="section section--center hero__wrapper">
+          <p class="display2 heading-space-lg">Hello!</p>
           <p class="display1">I'm Misty,</p>
           <p class="display1">a front-end developer.</p>
           <p class="h2 italic">I strive for a kinder, more accessible web.</p>
         </div>
       </section>
 
-      <section class="section" id="about">
-        <h1 class="h1 h1--section">About me</h1>
+      <section class="section section--center" id="about">
+        <h1 class="h1">About me</h1>
         <div class="about__wrapper flex-row">
           <img
             src="./assets/img/misty_headshot.PNG"
@@ -58,41 +58,36 @@
           </div>
         </div>
 
-        <h2 class="h3">Technologies I use</h2>
-        <div class="flex-row">
-          <article>
-            <p>Fundamental</p>
-            <div class="chip-wrapper">
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-                <li>GIT</li>
-                <li>NPM</li>
-              </ul>
-            </div>
+        <h2 class="h3 heading-space-lg">Technologies I use</h2>
+        <div class="tech flex-row">
+          <article class="tech__section">
+            <p class="heading-space-sm">Fundamental</p>
+            <ul class="chip-wrapper">
+              <li class="chip">HTML</li>
+              <li class="chip">CSS</li>
+              <li class="chip">JAVASCRIPT</li>
+              <li class="chip">GIT</li>
+            </ul>
           </article>
 
-          <article>
-            <p>Frameworks and tools</p>
-            <div class="chip-wrapper">
-              <ul>
-                <li>REACT</li>
-                <li>NEXT JS</li>
-                <li>TYPESCRIPT</li>
-                <li>SASS</li>
-                <li>MATERIAL UI</li>
-                <li>TAILWIND</li>
-                <li>ELEVENTY</li>
-                <li>SANITY</li>
-              </ul>
-            </div>
+          <article class="tech__section">
+            <p class="heading-space-sm">Frameworks and tools</p>
+            <ul class="chip-wrapper">
+              <li class="chip">REACT</li>
+              <li class="chip">NEXT JS</li>
+              <li class="chip">TYPESCRIPT</li>
+              <li class="chip">SASS</li>
+              <li class="chip">MATERIAL UI</li>
+              <li class="chip">TAILWIND</li>
+              <li class="chip">ELEVENTY</li>
+              <li class="chip">SANITY</li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section class="section" id="work">
-        <h1 class="h1 h1--section">Recent work</h1>
+      <section class="section section--center" id="work">
+        <h1 class="h1 heading-space-lg">Recent work</h1>
         <div class="flex-column">
           <article class="flex-row flex-row--project">
             <div>
@@ -117,8 +112,8 @@
         </div>
       </section>
 
-      <section class="section" id="contact">
-        <h1 class="h1 h1--section">Contact</h1>
+      <section class="section section--center" id="contact">
+        <h1 class="h1 heading-space-lg">Contact</h1>
         <p class="text-body">
           I’d love to meet you! Feel free to email me, reach out on linkedin, or
           use this form.

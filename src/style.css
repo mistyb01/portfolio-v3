@@ -49,7 +49,7 @@
     --fs-display2: 3.5rem;
     --fs-heading1: 2.5rem;
     --fs-heading2: 2rem;
-    --fs-heading3: 1.5rem;
+    --fs-heading3: 1.25rem;
 
     /* max widths */
     --max-w-desktop: 950px;
@@ -63,6 +63,10 @@ body {
 }
 
 .section {
+    min-height: 100vh;
+}
+
+.section--center {
     max-width: var(--max-w-desktop);
     margin: 0 auto;
 }
@@ -118,6 +122,14 @@ body {
     line-height: 175%;
 }
 
+.heading-space-lg {
+    margin-bottom: 2rem;
+} 
+
+.heading-space-sm {
+    margin-bottom: 1rem;
+}
+
 /* image */
 
 img, .img {
@@ -159,7 +171,6 @@ nav {
         url(./assets/svg/blob-scene-haikei.svg);
     background-size: cover;
     background-color: var(--clr-accent-light);
-    height: 100vh;
     padding-top: 7rem;
 }
 
@@ -185,4 +196,28 @@ nav {
     border-radius: 8px;
     opacity: 0.8;
     align-self: center;
+}
+
+.tech {
+    gap: 8rem;
+}
+
+.tech__section {
+    width: 50%;
+    gap: 0.5rem;
+}
+
+.chip-wrapper {
+    font-size: var(--fs-light);
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.chip {
+    color: var(--clr-secondary);
+    border: 1px solid var(--clr-secondary);
+    padding: 0.25rem 1rem;
 }
