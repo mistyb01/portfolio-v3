@@ -44,13 +44,14 @@
     /* font size */
     --fs-body: 1.125rem;
     --fs-light: 1rem;
-    --fs-display1: 5rem;
-    --fs-display2: 4rem;
-    --fs-heading-section: 2.5rem;
-    --fs-subheading-section: 1.5rem;
+    --fs-display1: 4.5rem;
+    --fs-display2: 3.5rem;
+    --fs-heading1: 2.5rem;
+    --fs-heading2: 2rem;
+    --fs-heading3: 1.5rem;
 
     /* max widths */
-    --max-w-desktop: 800px;
+    --max-w-desktop: 950px;
 }
 
 body {
@@ -71,13 +72,34 @@ body {
     justify-content: space-between;
 }
 
-.h3 {
-    font-size: var(--fs-subheading-section);
-}
-
 .link { 
     color: inherit;
     text-decoration: none;
+}
+
+/* TEXT */
+.display1 {
+    font-family: var(--ff-display-black);
+    font-size: var(--fs-display1);
+    line-height: 125.4%;
+}
+
+.display2 {
+    color: var(--clr-accent);
+    font-family: var(--ff-display-semibold);
+    font-size: var(--fs-display2);
+}
+
+.h2 {
+    font-size: var(--fs-heading2);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.h3 {
+    font-family: var(--fs-heading3);
 }
 
 /* NAVBAR */
@@ -87,8 +109,7 @@ nav {
 
 .nav__wrapper {
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    height: 3rem;
 }
 
 .nav__links {
@@ -105,4 +126,22 @@ nav {
     color: var(--clr-accent-light);
 }
 
-.link--nav:hover { color: var(--clr-highlight); }
+.link--nav:hover { 
+    color: var(--clr-highlight); 
+}
+
+/* HERO */
+.hero {
+    background-image: 
+        linear-gradient(0deg, rgba(244,255,241,1) 0%, rgba(246,255,243,0.5) 20%, rgba(255,255,255,0) 100%), 
+        url(./assets/svg/blob-scene-haikei.svg);
+    background-size: cover;
+    background-color: var(--clr-accent-light);
+    height: 100vh;
+    padding-top: 7rem;
+}
+
+.hero__wrapper {
+    color: var(--clr-secondary) 
+}
+
