@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -72,6 +73,11 @@ body {
     justify-content: space-between;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .link { 
     color: inherit;
     text-decoration: none;
@@ -90,16 +96,32 @@ body {
     font-size: var(--fs-display2);
 }
 
+.h1 {
+    font-family: 'Trirong Bold';
+    color: var(--clr-secondary);
+    font-size: var(--fs-heading1);
+}
+
 .h2 {
     font-size: var(--fs-heading2);
+}
+
+.h3 {
+    font-family: var(--fs-heading3);
 }
 
 .italic {
     font-style: italic;
 }
 
-.h3 {
-    font-family: var(--fs-heading3);
+.text-wrapper {
+    line-height: 175%;
+}
+
+/* image */
+
+img, .img {
+    max-width: 100%;
 }
 
 /* NAVBAR */
@@ -133,7 +155,7 @@ nav {
 /* HERO */
 .hero {
     background-image: 
-        linear-gradient(0deg, rgba(244,255,241,1) 0%, rgba(246,255,243,0.5) 20%, rgba(255,255,255,0) 100%), 
+        linear-gradient(0deg, rgba(244,255,241,1) 0%, rgba(246,255,243,0.5) 25%, rgba(255,255,255,0) 100%), 
         url(./assets/svg/blob-scene-haikei.svg);
     background-size: cover;
     background-color: var(--clr-accent-light);
@@ -145,3 +167,22 @@ nav {
     color: var(--clr-secondary) 
 }
 
+
+/* ABOUT */
+
+.about__wrapper {
+    gap: 2rem;
+}
+
+.text-wrapper--about {
+    padding: 2.5rem;
+    background-color: var(--clr-accent-light);
+    gap: 2rem;
+}
+
+.img--about {
+    width: 16rem;
+    border-radius: 8px;
+    opacity: 0.8;
+    align-self: center;
+}
