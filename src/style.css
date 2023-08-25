@@ -62,8 +62,8 @@ body {
     font-family: var(--ff-body);
 }
 
-.section {
-    min-height: 100vh;
+.section + .section {
+    margin-top: 5rem;
 }
 
 .section--center {
@@ -166,6 +166,7 @@ nav {
 
 /* HERO */
 .hero {
+    height: 100vh;
     background-image: 
         linear-gradient(0deg, rgba(244,255,241,1) 0%, rgba(246,255,243,0.5) 25%, rgba(255,255,255,0) 100%), 
         url(./assets/svg/blob-scene-haikei.svg);
@@ -220,4 +221,12 @@ nav {
     color: var(--clr-secondary);
     border: 1px solid var(--clr-secondary);
     padding: 0.25rem 1rem;
+}
+
+/* projects */
+
+.img--project {
+    width: 25rem;
+    border: 2px solid var(--clr-text);
+    border-radius: 8px;
 }
