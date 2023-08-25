@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(./assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Trirong Black';
+    src: url(./assets/fonts/Trirong/Trirong-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Trirong Bold';
+    src: url('./assets/fonts/Trirong/Trirong-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Trirong SemiBold';
+    src: url(./assets/fonts/Trirong/Trirong-SemiBold.ttf);
+}
+
+
+:root {
+    /* colors */
+    --clr-bg-main: #F4FFF1;
+    --clr-text: #0A3370;
+    --clr-secondary: #3C71C1;
+    --clr-accent: #50B8E5;
+    --clr-accent-light: #EAFFE5;
+    --clr-highlight: #FFCE94;
+
+    /* font families */
+    --ff-body: 'Rubik'; 
+    --ff-display-black: 'Trirong Black';
+    --ff-display-semibold: 'Trirong Semibold';
+    --ff-display-bold: 'Trirong Bold';
+
+    /* font size */
+    --fs-body: 1.125rem;
+    --fs-light: 1rem;
+    --fs-display1: 5rem;
+    --fs-display2: 4rem;
+    --fs-heading-section: 2.5rem;
+    --fs-subheading-section: 1.5rem;
+}
