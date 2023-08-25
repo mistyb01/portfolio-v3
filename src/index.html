@@ -38,7 +38,7 @@
             alt="A half asian woman in the sunlight"
             class="img img--about"
           />
-          <div class="text-wrapper text-wrapper--about flex-column">
+          <div class="body-text body-text--about flex-column">
             <p>
               Thank you for stopping by! I'm Misty, and I'm a developer who is
               passionate about bringing beautiful designs to life, without
@@ -89,18 +89,21 @@
       <section class="section section--center" id="work">
         <h1 class="h1 heading-space-lg">Recent work</h1>
         <div class="flex-column">
-          <article class="flex-row flex-row--project">
-            <div>
-              <h2 class="h2 heading-space-sm">Pomodoro Timer</h2>
-              <p class="body-text body-text--light heading-space-lg">
-                react | typescript | nextJS | chakraUI
-              </p>
+          <article class="flex-row project">
+            <div class="flex-column project__text">
+              <div>
+                <h2 class="h2">Pomodoro Timer</h2>
+                <p class="body-text body-text--light">
+                  react | typescript | nextJS | chakraUI
+                </p>
+              </div>
+
               <p class="body-text">
                 A timer that alternates between work and break periods.
                 Featuring editable cycles.
               </p>
               <div class="flex-row">
-                <button class="btn">Read more</button>
+                <button class="btn btn--lg">Read more</button>
                 <div class="flex-row">
                   <a href="">live</a>
                   <a href="">repo</a>
@@ -121,7 +124,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="section section--center">
       <p class="text-body text--bold text--center">
         design & code by misty becker © 2023
       </p>
