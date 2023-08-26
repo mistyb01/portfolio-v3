@@ -122,6 +122,11 @@ body {
     line-height: 175%;
 }
 
+.body-text--light {
+    font-size: var(--fs-light);
+    color: var(--clr-secondary);
+}
+
 .heading-space-lg {
     margin-bottom: 2rem;
 } 
