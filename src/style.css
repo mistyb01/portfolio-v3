@@ -250,6 +250,19 @@ nav {
     justify-content: space-between;
 }
 
+.project__icons {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.svg-icon {
+    fill: var(--clr-secondary);
+    transition: 0.25s;
+}
+
+.svg-icon:hover {
+    fill: var(--clr-accent);
+}
 footer {
     text-align: center;
 }
