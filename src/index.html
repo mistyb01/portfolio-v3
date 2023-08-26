@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misty Becker | Front-end Developer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="section--center nav__wrapper flex-row">
+        <span class="h3 h3--logo"
+          ><a href="#hero" class="link link--logo">Misty Becker</a></span
+        >
+        <ul class="nav__links flex-row">
+          <li><a class="link link--nav h3" href="#about">About</a></li>
+          <li><a class="link link--nav h3" href="#work">Work</a></li>
+          <li><a class="link link--nav h3" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="section--center hero__wrapper">
+          <p class="display2 heading-space-lg">Hello!</p>
+          <p class="display1">I'm Misty,</p>
+          <p class="display1">a front-end developer.</p>
+          <p class="h2 italic">I strive for a kinder, more accessible web.</p>
+        </div>
+      </section>
+
+      <section class="section section--center" id="about">
+        <h1 class="h1">About me</h1>
+        <div class="about__wrapper flex-row">
+          <img
+            src="./assets/img/misty_headshot.PNG"
+            alt="A half asian woman in the sunlight"
+            class="img img--about"
+          />
+          <div class="body-text body-text--about flex-column">
+            <p>
+              Thank you for stopping by! I'm Misty, and I'm a developer who is
+              passionate about bringing beautiful designs to life, without
+              compromising on accessibility and user experience.
+            </p>
+            <p>
+              I graduated from University of Washington in 2022, with a degree
+              in Informatics. I've since been active in the non-profit
+              space--helping to get a budding tech-for-good organization up and
+              running!
+            </p>
+            <p>
+              My career is just beginning, and I'm excited to continue learning
+              from here. I'm seeking full-time work, and am open to working
+              remotely, or on-site in the greater Seattle area.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="h3 heading-space-lg">Technologies I use</h2>
+        <div class="tech flex-row">
+          <article class="tech__section">
+            <p class="heading-space-sm">Fundamental</p>
+            <ul class="chip-wrapper">
+              <li class="chip">HTML</li>
+              <li class="chip">CSS</li>
+              <li class="chip">JAVASCRIPT</li>
+              <li class="chip">GIT</li>
+            </ul>
+          </article>
+
+          <article class="tech__section">
+            <p class="heading-space-sm">Frameworks and tools</p>
+            <ul class="chip-wrapper">
+              <li class="chip">REACT</li>
+              <li class="chip">NEXT JS</li>
+              <li class="chip">TYPESCRIPT</li>
+              <li class="chip">SASS</li>
+              <li class="chip">MATERIAL UI</li>
+              <li class="chip">TAILWIND</li>
+              <li class="chip">ELEVENTY</li>
+              <li class="chip">SANITY</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--center" id="work">
+        <h1 class="h1 heading-space-lg">Recent work</h1>
+        <div class="flex-column projects-wrapper">
+          <article class="flex-row project">
+            <div class="flex-column project__text">
+              <div>
+                <h2 class="h2">Pomodoro Timer</h2>
+                <p class="body-text body-text--light">
+                  react | typescript | nextJS | chakraUI
+                </p>
+              </div>
+
+              <p class="body-text">
+                A timer that alternates between work and break periods.
+                Featuring editable cycles.
+              </p>
+              <div class="flex-row">
+                <button class="btn btn--lg">Read more</button>
+                <div class="flex-row project__icons">
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="svg-icon"
+                      viewBox="0 0 16 16"
+                      width="32"
+                      height="32"
+                    >
+                      <path
+                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="svg-icon"
+                      height="36"
+                      viewBox="0 -960 960 960"
+                      width="36"
+                    >
+                      <path
+                        d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-43-61v-82q-35 0-59-26t-24-61v-44L149-559q-5 20-7 39.5t-2 39.5q0 130 84.5 227T437-141Zm294-108q22-24 38.5-51t28-56.5q11.5-29.5 17-60.5t5.5-63q0-106-58-192.5T607-799v18q0 35-24 61t-59 26h-87v87q0 17-13.5 28T393-568h-83v88h258q17 0 28 13t11 30v127h43q29 0 51 17t30 44Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/img/pomos.png" alt="" class="img img--project" />
+          </article>
+
+          <article class="flex-row project">
+            <div class="flex-column project__text">
+              <div>
+                <h2 class="h2">Pomodoro Timer</h2>
+                <p class="body-text body-text--light">
+                  react | typescript | nextJS | chakraUI
+                </p>
+              </div>
+
+              <p class="body-text">
+                A timer that alternates between work and break periods.
+                Featuring editable cycles.
+              </p>
+              <div class="flex-row">
+                <button class="btn btn--lg">Read more</button>
+                <div class="flex-row project__icons">
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="svg-icon"
+                      viewBox="0 0 16 16"
+                      width="32"
+                      height="32"
+                    >
+                      <path
+                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="svg-icon"
+                      height="36"
+                      viewBox="0 -960 960 960"
+                      width="36"
+                    >
+                      <path
+                        d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-43-61v-82q-35 0-59-26t-24-61v-44L149-559q-5 20-7 39.5t-2 39.5q0 130 84.5 227T437-141Zm294-108q22-24 38.5-51t28-56.5q11.5-29.5 17-60.5t5.5-63q0-106-58-192.5T607-799v18q0 35-24 61t-59 26h-87v87q0 17-13.5 28T393-568h-83v88h258q17 0 28 13t11 30v127h43q29 0 51 17t30 44Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/img/pomos.png" alt="" class="img img--project" />
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--center" id="contact">
+        <h1 class="h1 heading-space-lg">Contact</h1>
+        <p class="text-body heading-space-lg">
+          I’d love to meet you! Feel free to
+          <a href="mailto:mistyb140@gmail.com">email</a> me, reach out on
+          <a href="https://www.linkedin.com/in/misty-becker/" target="_blank"
+            >linkedin</a
+          >, or use this form.
+        </p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="f04d7514-6621-4a45-9448-5186fc706ecd"
+          />
+          <div class="flex-column form">
+            <div class="form__field">
+              <label class="form__label" for="name">Name</label>
+              <input
+                class="form__input form__input--sm"
+                type="text"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="email">Email</label>
+              <input
+                class="form__input form__input--sm"
+                type="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="message">Message</label>
+              <textarea
+                class="form__input form__input--lg"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div class="h-captcha" data-captcha="true"></div>
+            <button class="btn btn--form" type="submit">Submit Form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="section--center">
+      <p class="body-text--light text--center">
+        design & code by misty becker © 2023
+      </p>
+    </footer>
+  </body>
+</html>
