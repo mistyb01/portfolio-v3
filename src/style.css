@@ -33,7 +33,7 @@
     --clr-secondary: #6E629C;
     --clr-accent: #7B7C9F;
     --clr-accent2: #CFDBF4;
-    --clr-accent-light: #EAFFE5;
+    --clr-accent-light: #EBF6F2;
     --clr-highlight: #F0BDC6;
 
     /* font families */
@@ -183,11 +183,6 @@ nav {
 /* HERO */
 .hero {
     height: 100vh;
-    background-image: 
-        linear-gradient(0deg, rgba(244,255,241,1) 0%, rgba(246,255,243,0.5) 25%, rgba(255,255,255,0) 100%), 
-        url(./assets/svg/blob-scene-haikei.svg);
-    background-size: cover;
-    background-color: var(--clr-accent-light);
     padding-top: 7rem;
 }
 
@@ -291,7 +286,7 @@ nav {
 .btn--form {
     align-self: flex-start;
     background-color: var(--clr-secondary);
-    color: var(--clr-accent-light);
+    color: var(--clr-accent2);
 }
 
 footer {
