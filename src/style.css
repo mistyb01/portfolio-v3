@@ -156,8 +156,7 @@ img, .img {
 
 .nav__container {
     position: absolute;
-    width: var(--max-w-desktop);
-    /* border: 1px solid #0A3370; */
+    max-width: var(--max-w-desktop);
     display: flex;
     justify-content: flex-end;
     margin: 2rem auto;
