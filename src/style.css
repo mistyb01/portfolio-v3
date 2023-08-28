@@ -30,11 +30,11 @@
     /* colors */
     --clr-bg-main: #F4FFF1;
     --clr-text: #0A3370;
-    --clr-secondary: #3C71C1;
-    --clr-accent: #50B8E5;
-    --clr-accent2: #BBF0DF;
+    --clr-secondary: #6E629C;
+    --clr-accent: #7B7C9F;
+    --clr-accent2: #CFDBF4;
     --clr-accent-light: #EAFFE5;
-    --clr-highlight: #FFCE94;
+    --clr-highlight: #F0BDC6;
 
     /* font families */
     --ff-body: 'Rubik'; 
@@ -43,7 +43,7 @@
     --ff-display-bold: 'Trirong Bold';
 
     /* font size */
-    --fs-body: 1.125rem;
+    --fs-body: 1rem;
     --fs-light: 1rem;
     --fs-display1: 4.5rem;
     --fs-display2: 3.5rem;
