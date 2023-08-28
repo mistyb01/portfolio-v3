@@ -154,7 +154,7 @@ img, .img {
 
 /* NAVBAR */
 nav {
-    background-color: var(--clr-secondary); 
+    position: absolute;
 }
 
 .nav__wrapper {
@@ -185,7 +185,7 @@ nav {
     height: 100vh;
     padding-top: 7rem;
     background: rgb(85,92,255);
-    background: linear-gradient(180deg, rgba(85,92,255,0.8) 0%, rgba(118,167,255,0.9) 27%, rgba(214,217,221,1) 48%, rgba(221,227,227,1) 62%, rgba(244,255,241,1) 100%); 
+    background: linear-gradient(180deg, rgba(85,92,255,0.25) 0%, rgba(118,167,255,0.33) 27%, rgba(214,217,221,1) 48%, rgba(221,227,227,1) 62%, rgba(244,255,241,1) 100%); 
 }
 
 .hero__cloud {
