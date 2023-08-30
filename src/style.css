@@ -152,14 +152,22 @@ img, .img {
 /* button */
 
 .btn {
-    font-size: var(--fs-heading3);
     border: 2px solid var(--clr-secondary);
     border-radius: 4px;
     color: var(--clr-secondary);
-    padding: 0.25rem 1rem;
     background-color: transparent;
 }
 
+.btn--lg {
+    font-size: var(--fs-heading3);
+    padding: 0.25rem 1rem;
+}
+
+.btn--med {
+    padding: 0.25rem 0.5rem;
+    font-size: var(--fs-body);
+    font-weight: 500;
+}
 /* NAVBAR */
 
 .nav__container {
@@ -278,7 +286,13 @@ img, .img {
     justify-content: space-between;
 }
 
-.project__icons {
+.project__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn--icon {
+    display: flex;
     align-items: center;
     gap: 0.5rem;
 }
