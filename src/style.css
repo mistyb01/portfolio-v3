@@ -63,17 +63,17 @@ body {
     margin: 0 auto;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
 .link { 
     color: inherit;
     text-decoration: none;
 }
 
 /* TEXT */
+
+.section > *,
+.subsection > * {
+    margin-block-start: 1em;
+}
 
 .h1 {
     font-family: 'Trirong Bold';
@@ -152,12 +152,6 @@ img, .img {
     transition: 0.25s;
 }
 
-.link--nav:hover:before {
-    content: url(./assets/svg/four-point-icon.svg);
-    width: 22px;
-    height: 22px;
-}
-
 /* HERO */
 .hero {
     min-height: 100vh;
@@ -212,29 +206,15 @@ img, .img {
 
 /* ABOUT */
 
-.about__wrapper {
-    gap: 2rem;
-}
-
 .body-text--about {
-    padding: 2.5rem;
+    padding: 2rem;
     background-color: var(--clr-accent-light);
-    gap: 2rem;
 }
 
 .img--about {
     width: 16rem;
     border-radius: 8px;
     align-self: center;
-}
-
-.tech {
-    gap: 8rem;
-}
-
-.tech__section {
-    width: 50%;
-    gap: 0.5rem;
 }
 
 .chip-wrapper {
@@ -281,15 +261,7 @@ img, .img {
     transition: 0.25s;
 }
 
-.svg-icon:hover {
-    fill: var(--clr-accent);
-}
-
 /* form */
-
-.form {
-    gap: 1rem;
-}
 
 .form__label {
     display: block;
