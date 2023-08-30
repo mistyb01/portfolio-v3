@@ -32,63 +32,67 @@
 
       <section class="section section--center" id="about">
         <h1 class="h1">About me</h1>
-        <img
-          src="./assets/img/misty_headshot.PNG"
-          alt="A half asian woman in the sunlight"
-          class="img img--about"
-        />
-        <article class="subsection body-text body-text--about">
-          <p>
-            Thank you for stopping by! I'm Misty, and I'm a developer who is
-            passionate about bringing beautiful designs to life, without
-            compromising on accessibility and user experience.
-          </p>
-          <p>
-            I graduated from University of Washington in 2022, with a degree in
-            Informatics. I've since been active in the non-profit space--helping
-            to get a budding tech-for-good organization up and running!
-          </p>
-          <p>
-            My career is just beginning, and I'm excited to continue learning
-            from here. I'm seeking full-time work, and am open to working
-            remotely, or on-site in the greater Seattle area.
-          </p>
+        <div class="content-wrapper">
+          <article class="subsection">
+            <img
+            src="./assets/img/misty_headshot.PNG"
+            alt="A half asian woman in the sunlight"
+            class="img img--about"
+          />
+          <div class="body-text body-text--about">
+            <p>
+              Thank you for stopping by! I'm Misty, and I'm a developer who is
+              passionate about bringing beautiful designs to life, without
+              compromising on accessibility and user experience.
+            </p>
+            <p>
+              I graduated from University of Washington in 2022, with a degree
+              in Informatics. I've since been active in the non-profit
+              space--helping to get a budding tech-for-good organization up and
+              running!
+            </p>
+            <p>
+              My career is just beginning, and I'm excited to continue learning
+              from here. I'm seeking full-time work, and am open to working
+              remotely, or on-site in the greater Seattle area.
+            </p>
+            </div>
+          </article>
+
+        <article class="subsection tech__section">
+        <h2 class="subheading">Technologies I use</h2>
+
+          <p>Fundamental</p>
+          <ul class="chip-wrapper">
+            <li class="chip">HTML</li>
+            <li class="chip">CSS</li>
+            <li class="chip">JAVASCRIPT</li>
+            <li class="chip">GIT</li>
+          </ul>
         </article>
 
-        <h2 class="h3 heading-space-lg">Technologies I use</h2>
-        <div class="tech">
-          <article class="subsection tech__section">
-            <p>Fundamental</p>
-            <ul class="chip-wrapper">
-              <li class="chip">HTML</li>
-              <li class="chip">CSS</li>
-              <li class="chip">JAVASCRIPT</li>
-              <li class="chip">GIT</li>
-            </ul>
-          </article>
-
-          <article class="subsection tech__section">
-            <p>Frameworks and tools</p>
-            <ul class="chip-wrapper">
-              <li class="chip">REACT</li>
-              <li class="chip">NEXT JS</li>
-              <li class="chip">TYPESCRIPT</li>
-              <li class="chip">SASS</li>
-              <li class="chip">MATERIAL UI</li>
-              <li class="chip">TAILWIND</li>
-              <li class="chip">ELEVENTY</li>
-              <li class="chip">SANITY</li>
-            </ul>
-          </article>
-        </div>
+        <article class="subsection tech__section">
+          <p>Frameworks and tools</p>
+          <ul class="chip-wrapper">
+            <li class="chip">REACT</li>
+            <li class="chip">NEXT JS</li>
+            <li class="chip">TYPESCRIPT</li>
+            <li class="chip">SASS</li>
+            <li class="chip">MATERIAL UI</li>
+            <li class="chip">TAILWIND</li>
+            <li class="chip">ELEVENTY</li>
+            <li class="chip">SANITY</li>
+          </ul>
+        </article>
       </section>
 
       <section class="section section--center" id="work">
         <h1 class="h1 heading-space-lg">Recent work</h1>
-        <div class="flex-column projects-wrapper">
-          <article class="subsection">
+        <div class="content-wrapper">
+          <article class="subsection project">
+            <img src="./assets/img/pomos.png" alt="" class="img img--project" />
             <div>
-              <h2 class="h2">Pomodoro Timer</h2>
+              <h2 class="subheading">Pomodoro Timer</h2>
               <p class="body-text body-text--light">
                 react | typescript | nextJS | chakraUI
               </p>
@@ -127,11 +131,11 @@
                 Github
               </button>
             </div>
-            <img src="./assets/img/pomos.png" alt="" class="img img--project" />
           </article>
-          <article class="subsection">
+          <article class="subsection project">
+            <img src="./assets/img/pomos.png" alt="" class="img img--project" />
             <div>
-              <h2 class="h2">Pomodoro Timer</h2>
+              <h2 class="subheading">Pomodoro Timer</h2>
               <p class="body-text body-text--light">
                 react | typescript | nextJS | chakraUI
               </p>
@@ -171,14 +175,13 @@
                 Github
               </button>
             </div>
-
-            <img src="./assets/img/pomos.png" alt="" class="img img--project" />
           </article>
         </div>
       </section>
 
       <section class="section section--center" id="contact">
         <h1 class="h1 heading-space-lg">Contact</h1>
+        <div class="content-wrapper">
         <p class="text-body heading-space-lg">
           I’d love to meet you! Feel free to
           <a href="mailto:mistyb140@gmail.com">email</a> me, reach out on
@@ -223,6 +226,7 @@
             <button class="btn btn--form" type="submit">Submit Form</button>
           </div>
         </form>
+        </div>
       </section>
     </main>
 
