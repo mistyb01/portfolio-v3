@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav class="nav__container">
-      <ul class="nav__links flex-row">
+      <ul class="nav__links">
         <li><a class="link link--nav h3" href="#about">About</a></li>
         <li><a class="link link--nav h3" href="#work">Work</a></li>
         <li><a class="link link--nav h3" href="#contact">Contact</a></li>
@@ -19,11 +19,13 @@
       <section class="hero" id="hero">
         <div class="hero__cloud">
           <div class="section--center hero__wrapper">
-            <p class="display2 heading-space-lg">Hello!</p>
-            <p class="display1">I'm Misty,</p>
-            <p class="display1">a front-end developer.</p>
+            <p class="hero__text--md margin-bottom-lg">Hello!</p>
+            <p class="hero__text--lg">I'm Misty,</p>
+            <p class="hero__text--lg margin-bottom-sm">
+              a front-end developer.
+            </p>
 
-            <p class="h2 italic highlighted-text">
+            <p class="hero__text--sm">
               I strive for a kinder, more accessible web.
             </p>
           </div>
@@ -32,7 +34,7 @@
 
       <section class="section section--center" id="about">
         <h1 class="h1">About me</h1>
-        <div class="about__wrapper flex-row">
+        <div class="about__wrapper">
           <img
             src="./assets/img/misty_headshot.PNG"
             alt="A half asian woman in the sunlight"
@@ -59,7 +61,7 @@
         </div>
 
         <h2 class="h3 heading-space-lg">Technologies I use</h2>
-        <div class="tech flex-row">
+        <div class="tech">
           <article class="tech__section">
             <p class="heading-space-sm">Fundamental</p>
             <ul class="chip-wrapper">
@@ -89,7 +91,7 @@
       <section class="section section--center" id="work">
         <h1 class="h1 heading-space-lg">Recent work</h1>
         <div class="flex-column projects-wrapper">
-          <article class="flex-row project">
+          <article class="project">
             <div class="flex-column project__text">
               <div>
                 <h2 class="h2">Pomodoro Timer</h2>
@@ -135,7 +137,7 @@
             </div>
             <img src="./assets/img/pomos.png" alt="" class="img img--project" />
           </article>
-          <article class="flex-row project">
+          <article class="project">
             <div class="flex-column project__text">
               <div>
                 <h2 class="h2">Pomodoro Timer</h2>
