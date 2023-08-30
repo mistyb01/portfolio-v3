@@ -218,12 +218,13 @@ img, .img {
 .body-text--about {
     padding: 2rem;
     background-color: var(--clr-accent-light);
+    border-radius: 8px;
 }
 
 .img--about {
     width: 16rem;
     border-radius: 8px;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .chip-wrapper {
@@ -254,7 +255,8 @@ img, .img {
 
 .project__buttons {
     display: flex;
-gap: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .btn--icon {
@@ -316,7 +318,7 @@ footer {
     .section--center {
         max-width: 950px;
     }
-    
+
     .hero__wrapper {
         font-size: 4.5rem;
     }
@@ -325,6 +327,17 @@ footer {
         background-image: url(./assets/svg/header-desktop.svg);
         background-position: bottom left;
     }    
+
+    .about__content {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
 
     footer {
     min-height: 30em;
