@@ -135,7 +135,7 @@ img, .img {
 
 .nav__container {
     position: absolute;
-    max-width: var(--max-w-desktop);
+    width: var(--max-w-desktop);
     display: flex;
     justify-content: flex-end;
     margin: 2rem auto;
@@ -144,8 +144,13 @@ img, .img {
 }
 
 .nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     list-style: none;
-    gap: 5rem;
+justify-content: space-around;
+padding-right: 1rem;
+
 }
 
 .link--nav {
