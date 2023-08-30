@@ -123,7 +123,8 @@ img, .img {
 }
 
 .btn--lg {
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.125rem;
 }
 
 .btn--med {
@@ -241,7 +242,7 @@ img, .img {
 .chip {
     color: var(--clr-secondary);
     border: 1px solid var(--clr-secondary);
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 /* projects */
@@ -258,13 +259,13 @@ img, .img {
 
 .project__buttons {
     display: flex;
-    gap: 1rem;
+gap: 1rem;
 }
 
 .btn--icon {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .svg-icon {
@@ -286,8 +287,8 @@ img, .img {
     font-family: var(--ff-body);
 }
 
-.form__input--sm { width: 300px; }
-.form__input--lg { width: 500px; }
+.form__input--sm { width: min(300px, 100%); }
+.form__input--lg { width: min(500px, 100%); }
 
 .btn--form {
     align-self: flex-start;
