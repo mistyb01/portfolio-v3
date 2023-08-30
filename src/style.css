@@ -42,9 +42,6 @@
     --ff-display-black: 'Trirong Black';
     --ff-display-semibold: 'Trirong Semibold';
     --ff-display-bold: 'Trirong Bold';
-
-    /* max widths */
-    --max-w-desktop: ;
 }
 
 body {
@@ -72,7 +69,6 @@ body {
 }
 
 .section--center {
-    max-width: var(--max-w-desktop);
     margin: 0 auto;
     padding: 1rem;
 }
@@ -186,17 +182,9 @@ img, .img {
     height: 100vh;
 }
 
-@media (min-width: 768px) {
-    .hero__cloud {
-        background-image: url(./assets/svg/header-desktop.svg);
-        background-position: bottom left;
-    }    
-}
-
 .hero__wrapper {
     color: var(--clr-secondary);
     padding-top: 8rem;
-    container-type: inline-size;
     font-size: 3rem;
 }
 
@@ -222,11 +210,6 @@ img, .img {
     margin-top: 1rem;
 }
 
-@media (min-width: 700px) {
-    .hero__wrapper {
-        font-size: 4.5rem;
-    }
-}
 
 
 
@@ -330,6 +313,19 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .section--center {
+        max-width: 950px;
+    }
+    
+    .hero__wrapper {
+        font-size: 4.5rem;
+    }
+
+    .hero__cloud {
+        background-image: url(./assets/svg/header-desktop.svg);
+        background-position: bottom left;
+    }    
+
     footer {
     min-height: 30em;
     background-image: url(./assets/svg/footer-desktop.svg);
