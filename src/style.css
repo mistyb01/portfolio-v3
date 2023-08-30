@@ -54,17 +54,20 @@ body {
     font-family: var(--ff-body);
 }
 
-.section > *,
-.subsection > * {
-    margin-block-start: 1em;
-}
-
+/* space between sections */
 .section + .section {
     margin-top: 8rem;
 }
 
-.content-wrapper { margin-top: 3rem }
-.content-wrapper > * { margin-block-end: 2.5rem }
+/* for gap between header and section content */
+.content-wrapper { margin-top: 2.5rem }
+
+/* space between blocks in a section */
+.content-wrapper > * { margin-block-end: 4rem }
+
+/* space between blocks in a subsection */
+.subsection > * { margin-block-end: 1em;
+}
 
 .section--center {
     max-width: var(--max-w-desktop);
