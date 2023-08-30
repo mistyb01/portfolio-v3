@@ -52,6 +52,7 @@ body {
     background-color: var(--clr-bg-main);
     font-size: 1.125rem;
     font-family: var(--ff-body);
+    overflow-x: hidden;
 }
 
 /* space between sections */
@@ -173,12 +174,11 @@ img, .img {
     min-height: 100vh;
     padding-top: 7rem;
     background: rgb(85,92,255);
-    background: linear-gradient(180deg, rgba(85,92,255,0.25) 0%, rgba(118,167,255,0.33) 27%, rgba(214,217,221,1) 48%, rgba(221,227,227,1) 62%, rgba(244,255,241,1) 100%); 
+    background: linear-gradient(180deg, rgba(85,92,255,0.50) 0%, rgba(118,167,255,0.33) 27%, rgba(214,217,221,1) 48%, rgba(221,227,227,1) 62%, rgba(244,255,241,1) 100%); 
 }
 
 .hero__cloud {
-    background-image: url(./assets/svg/hero-cloud.svg);
-    background-position: bottom center;
+    background-image: url(./assets/svg/header-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
