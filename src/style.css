@@ -62,11 +62,10 @@ body {
 .content-wrapper { margin-top: 2.5rem }
 
 /* space between blocks in a section */
-.content-wrapper > * { margin-block-end: 4rem }
+.content-wrapper > *+* { margin-top: 4rem }
 
 /* space between blocks in a subsection */
-.subsection > * { margin-block-end: 1em;
-}
+.subsection > *+* { margin-top: 1em; }
 
 .section--center {
     margin: 0 auto;
@@ -229,6 +228,13 @@ img, .img {
     width: 16rem;
     border-radius: 8px;
     align-self: flex-start;
+}
+
+
+.tech__container {
+    display: grid;
+    grid-template-rows: 2;
+    gap: 2rem;
 }
 
 .chip-wrapper {
