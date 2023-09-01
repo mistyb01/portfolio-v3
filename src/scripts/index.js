@@ -20,24 +20,28 @@ const modeIcon = document.createElement('span')
 modeIcon.classList.add('material-symbols-outlined')
 
 let isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-isDarkMode ? modeIcon.innerText = 'light_mode' : modeIcon.innerText = 'dark_mode'
+
+function setMode() {
+    if (isDarkMode) {
+        modeIcon.innerText = 'light_mode' 
+        document.body.classList.add('dark-mode')
+    } else {
+        modeIcon.innerText = 'dark_mode'
+        document.body.classList.add('light-mode')
+    }     
+}
 
 // watch for changes
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     isDarkMode = event.matches;
-    isDarkMode ? modeIcon.innerText = 'light_mode' : modeIcon.innerText = 'dark_mode'
+    setMode();
 });
-
-modeBtn.appendChild(modeIcon)
 
 modeBtn.addEventListener('click', () => {
     document.body.className = ""
-    if (isDarkMode) {
-        document.body.classList.add('light-mode')
-        isDarkMode = false;
-    } else {
-        document.body.classList.add('dark-mode')
-        isDarkMode = true;
-    }
-    isDarkMode ? modeIcon.innerText = 'light_mode' : modeIcon.innerText = 'dark_mode'
+    isDarkMode = !isDarkMode;
+    setMode();
 })
+
+modeBtn.appendChild(modeIcon);
+setMode();
