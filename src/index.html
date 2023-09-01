@@ -9,9 +9,13 @@
   <body>
     <nav class="section--center nav__container">
       <ul class="nav__links">
-        <li><a class="link link--nav h3" href="#about">About</a></li>
-        <li><a class="link link--nav h3" href="#work">Work</a></li>
-        <li><a class="link link--nav h3" href="#contact">Contact</a></li>
+        <li>
+          <a class="link link--nav h3" href="#about" role="link">About</a>
+        </li>
+        <li><a class="link link--nav h3" href="#work" role="link">Work</a></li>
+        <li>
+          <a class="link link--nav h3" href="#contact" role="link">Contact</a>
+        </li>
       </ul>
     </nav>
 
@@ -92,21 +96,23 @@
       <section class="section section--center animate" id="work">
         <h1 class="h1 heading-space-lg">Recent work</h1>
         <div class="content-wrapper">
-          <article class="subsection project">
+          <article class="project">
             <img src="./assets/img/pomos.png" alt="" class="img img--project" />
-            <div class="subsection">
-              <div>
-                <h2 class="subheading">Pomodoro Timer</h2>
-                <p class="body-text body-text--light">
-                  react | typescript | nextJS | chakraUI
+            <div class="project__content">
+              <div class="subsection">
+                <div>
+                  <h2 class="subheading">Pomodoro Timer</h2>
+                  <p class="body-text body-text--light">
+                    react | typescript | nextJS | chakraUI
+                  </p>
+                </div>
+                <p class="body-text">
+                  A timer that alternates between work and break periods.
+                  Featuring editable cycles.
                 </p>
               </div>
-              <p class="body-text">
-                A timer that alternates between work and break periods.
-                Featuring editable cycles.
-              </p>
               <div class="project__buttons">
-                <button class="btn btn--lg btn--icon">
+                <button class="btn btn--icon" role="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="svg-icon"
@@ -120,7 +126,7 @@
                   </svg>
                   Live site
                 </button>
-                <button class="btn btn--lg btn--icon">
+                <button class="btn btn--icon" role="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="svg-icon"
@@ -137,21 +143,23 @@
               </div>
             </div>
           </article>
-          <article class="subsection project">
+          <article class="project">
             <img src="./assets/img/pomos.png" alt="" class="img img--project" />
-            <div class="subsection">
-              <div>
-                <h2 class="subheading">Pomodoro Timer</h2>
-                <p class="body-text body-text--light">
-                  react | typescript | nextJS | chakraUI
+            <div class="project__content">
+              <div class="subsection">
+                <div>
+                  <h2 class="subheading">Pomodoro Timer</h2>
+                  <p class="body-text body-text--light">
+                    react | typescript | nextJS | chakraUI
+                  </p>
+                </div>
+                <p class="body-text">
+                  A timer that alternates between work and break periods.
+                  Featuring editable cycles.
                 </p>
               </div>
-              <p class="body-text">
-                A timer that alternates between work and break periods.
-                Featuring editable cycles.
-              </p>
               <div class="project__buttons">
-                <button class="btn btn--lg btn--icon">
+                <button class="btn btn--icon" role="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="svg-icon"
@@ -165,7 +173,7 @@
                   </svg>
                   Live site
                 </button>
-                <button class="btn btn--lg btn--icon">
+                <button class="btn btn--icon" role="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="svg-icon"
@@ -190,12 +198,20 @@
         <div class="content-wrapper">
           <p class="text-body heading-space-lg">
             I’d love to meet you! Feel free to
-            <a href="mailto:mistyb140@gmail.com">email</a> me, reach out on
-            <a href="https://www.linkedin.com/in/misty-becker/" target="_blank"
+            <a href="mailto:mistyb140@gmail.com" role="link">email</a> me, reach
+            out on
+            <a
+              href="https://www.linkedin.com/in/misty-becker/"
+              target="_blank"
+              role="link"
               >linkedin</a
-            >, or use this form.
+            >, or use the form below.
           </p>
-          <form action="https://api.web3forms.com/submit" method="POST">
+          <form
+            aria-label="send message"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
             <input
               type="hidden"
               name="access_key"
@@ -215,7 +231,7 @@
                 <label class="form__label" for="email">Email</label>
                 <input
                   class="form__input form__input--sm"
-                  type="email"
+                  type="text"
                   name="email"
                   required
                 />
@@ -238,12 +254,10 @@
       </section>
     </main>
 
-    <footer>
-      <div class="section--center footer-wrapper">
-        <p class="body-text--light text--center">
-          design & code by misty becker © 2023
-        </p>
-      </div>
+    <footer class="section--center">
+      <p class="body-text--light text--center">
+        design & code by misty becker © 2023
+      </p>
     </footer>
 
     <script src="./scripts/index.js"></script>
