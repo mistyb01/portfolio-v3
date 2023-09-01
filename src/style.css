@@ -301,6 +301,18 @@ img, .img {
     margin-top: 5rem;
 }
 
+/* for section fade transitions */
+
+.animate {
+    opacity: 0;
+    transition: 0.5s ease-in-out opacity;
+}
+
+.active {
+    opacity: 1;
+}
+
+
 footer {
     width: 100%;
     min-height: 5em;
