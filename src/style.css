@@ -361,7 +361,6 @@ input, textarea {
 /* light/dark mode icons */
 
 .material-symbols-outlined {
-    font-size: 2rem !important;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -370,10 +369,9 @@ input, textarea {
 }
 
 .color-mode-container {
-    position: fixed;
+    position: absolute;
+    top: 2rem;
     left: 2rem;
-    bottom: 2rem;
-    z-index: 2;
 }
 
 .btn--color-mode {
@@ -403,6 +401,14 @@ footer {
     .nav__links {
         flex-direction: row;
         gap: 5rem;
+    }
+
+    .color-mode-container {
+        position: static;
+    }
+
+    .btn--color-mode {
+        margin-left: 2.5rem;
     }
 
     .section--center {
