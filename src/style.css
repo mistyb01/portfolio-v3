@@ -47,8 +47,8 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --clr-bg-main: #051d41;
-        --clr-text: #d7bfd7;
-        --clr-secondary: #AEA4D6;
+        --clr-text: #e0c5d4;
+        --clr-secondary: #aba1d2;
         --clr-accent: #AEA4D6;
         --clr-accent-light: #06295e;
     }
@@ -175,23 +175,21 @@ img, .img {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    list-style: none;
     padding-right: 1rem;
+    list-style-image: url(./assets/svg/four-point-icon.svg);
 }
+
+li::marker{
+    font-size: 2em;
+    line-height: 0.1;
+    
+ }
 
 .link--nav {
     font-weight: 500;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    transition: 0.25s;
-}
-
-.link--nav:before {
-    content: url(./assets/svg/four-point-icon.svg);
-    width: 18px;
-    height: 18px;
-    transition: 0.25s;
 }
 
 /* HERO */
@@ -302,7 +300,6 @@ img, .img {
 
 .svg-icon {
     fill: var(--clr-secondary);
-    transition: 0.25s;
 }
 
 /* form */
