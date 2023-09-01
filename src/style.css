@@ -202,6 +202,16 @@ li::marker{
     font-size: 3rem;
 }
 
+.hero__text.animate {
+    transition: 1s ease-in-out opacity;
+}
+
+/* fade-in animation delays */
+
+.hero__text:nth-child(4) {
+    transition-delay: 1000ms;
+}
+
 .hero__text--lg {
     font-family: var(--ff-display-black);
     line-height: 125.4%;
