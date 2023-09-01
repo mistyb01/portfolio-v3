@@ -54,6 +54,27 @@
     }
 }
 
+/* repetitive, can it be consolidated? */
+.dark-mode {
+    --clr-bg-main: #051d41;
+    --clr-text: #e0c5d4;
+    --clr-secondary: #aba1d2;
+    --clr-accent: #AEA4D6;
+    --clr-accent-light: #06295e;
+}
+
+.light-mode {
+    --clr-bg-main: #F4FFF1;
+    --clr-text: #0A3370;
+    --clr-secondary: #6E629C;
+    --clr-accent: #7B7C9F;
+    --clr-accent2: #CFDBF4;
+    --clr-accent-light: #EBF6F2;
+    --clr-highlight: #F0BDC6;
+    --clr-highlight-light: #f0bdc682;
+}
+/*  */
+
 body {
     color: var(--clr-text);
     background-color: var(--clr-bg-main);

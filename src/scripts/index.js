@@ -26,7 +26,18 @@ isDarkMode ? modeIcon.innerText = 'light_mode' : modeIcon.innerText = 'dark_mode
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     isDarkMode = event.matches;
     isDarkMode ? modeIcon.innerText = 'light_mode' : modeIcon.innerText = 'dark_mode'
-    
 });
 
 modeBtn.appendChild(modeIcon)
+
+modeBtn.addEventListener('click', () => {
+    document.body.className = ""
+    if (isDarkMode) {
+        document.body.classList.add('light-mode')
+        isDarkMode = false;
+    } else {
+        document.body.classList.add('dark-mode')
+        isDarkMode = true;
+    }
+    isDarkMode ? modeIcon.innerText = 'light_mode' : modeIcon.innerText = 'dark_mode'
+})
