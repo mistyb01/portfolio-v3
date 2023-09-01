@@ -209,7 +209,7 @@ li::marker{
 /* fade-in animation delays */
 
 .hero__text:nth-child(4) {
-    transition-delay: 1000ms;
+    transition-delay: 750ms;
 }
 
 .hero__text--lg {
@@ -354,12 +354,9 @@ input, textarea {
 }
 
 @media (prefers-reduced-motion) {
-    .animate {
+    .animate, .hero__text.animate {
         transition: none;
     }   
-    .hero__text.animate {
-        transition: none;
-    }
 }
 
 footer {
