@@ -47,9 +47,9 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --clr-bg-main: #051d41;
-        --clr-text: #eacdeb;
-        --clr-secondary: #998acc;
-        --clr-accent: #998acc;
+        --clr-text: #d7bfd7;
+        --clr-secondary: #AEA4D6;
+        --clr-accent: #AEA4D6;
         --clr-accent-light: #06295e;
     }
 }
