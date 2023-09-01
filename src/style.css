@@ -44,6 +44,16 @@
     --ff-display-bold: 'Trirong Bold';
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-bg-main: #051d41;
+        --clr-text: #eacdeb;
+        --clr-secondary: #998acc;
+        --clr-accent: #998acc;
+        --clr-accent-light: #06295e;
+    }
+}
+
 body {
     color: var(--clr-text);
     background-color: var(--clr-bg-main);
@@ -72,8 +82,11 @@ body {
     padding: 1rem;
 }
 
-.link { 
+a { 
     color: inherit;
+}
+
+.link {
     text-decoration: none;
 }
 
@@ -167,7 +180,6 @@ img, .img {
 }
 
 .link--nav {
-    color: var(--clr-text);
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -209,9 +221,6 @@ img, .img {
 
 .hero__text--sm {
     font-size: 0.5em;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: var(--clr-highlight);
     font-style: italic;
     margin-top: 1rem;
 }
@@ -297,6 +306,11 @@ img, .img {
 }
 
 /* form */
+
+input, textarea {
+    color: inherit;
+    font-size: inherit;
+}
 
 .form__label {
     display: block;
