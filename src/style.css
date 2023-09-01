@@ -62,11 +62,10 @@ body {
 .content-wrapper { margin-top: 2.5rem }
 
 /* space between blocks in a section */
-.content-wrapper > * { margin-block-end: 4rem }
+.content-wrapper > *+* { margin-top: 4rem }
 
 /* space between blocks in a subsection */
-.subsection > * { margin-block-end: 1em;
-}
+.subsection > *+* { margin-top: 1em; }
 
 .section--center {
     margin: 0 auto;
@@ -172,18 +171,8 @@ img, .img {
 
 /* HERO */
 .hero {
-    min-height: 100vh;
+    min-height: min(100vh, 1000px);
     padding-top: 7rem;
-    background: rgb(85,92,255);
-    background: linear-gradient(180deg, rgba(85,92,255,0.50) 0%, rgba(118,167,255,0.33) 27%, rgba(214,217,221,1) 48%, rgba(221,227,227,1) 62%, rgba(244,255,241,1) 100%); 
-}
-
-.hero__cloud {
-    background-image: url(./assets/svg/header-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
 }
 
 .hero__wrapper {
@@ -219,6 +208,12 @@ img, .img {
 
 /* ABOUT */
 
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .body-text--about {
     padding: 2rem;
     background-color: var(--clr-accent-light);
@@ -229,6 +224,13 @@ img, .img {
     width: 16rem;
     border-radius: 8px;
     align-self: flex-start;
+}
+
+
+.tech__container {
+    display: grid;
+    grid-template-rows: 2;
+    gap: 2rem;
 }
 
 .chip-wrapper {
@@ -276,9 +278,6 @@ img, .img {
 
 /* form */
 
-#contact {
-    padding-bottom: 15rem;
-}
 .form__label {
     display: block;
 }
@@ -304,19 +303,26 @@ img, .img {
     margin-top: 5rem;
 }
 
+/* for section fade transitions */
+
+.animate {
+    opacity: 0;
+    transition: 0.5s ease-in-out opacity;
+}
+
+.active {
+    opacity: 1;
+}
+
+
 footer {
     width: 100%;
-    min-height: 20em;
-    background-image: url(./assets/svg/footer-mobile.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    min-height: 5em;
     display: flex;
     justify-content: center;
     align-items: end;
     font-size: 0.9em;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
+
 }
 
 @media (min-width: 768px) {
@@ -334,14 +340,8 @@ footer {
         padding-top: 8rem;
     }
 
-    .hero__cloud {
-        background-image: url(./assets/svg/header-desktop.svg);
-        background-position: bottom left;
-    }    
-
     .about__content {
-        display: flex;
-        gap: 2rem;
+        flex-direction: row;
     }
 
     .tech__container {
@@ -357,8 +357,6 @@ footer {
     }
 
     footer {
-    min-height: 30em;
-    background-image: url(./assets/svg/footer-desktop.svg);
-    background-position: bottom left;
+    min-height: 10em;
     }
 }
