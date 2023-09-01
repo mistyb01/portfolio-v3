@@ -359,6 +359,37 @@ input, textarea {
     }   
 }
 
+/* light/dark mode icons */
+
+.material-symbols-outlined {
+    font-size: 2rem !important;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+.color-mode-container {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.btn--color-mode {
+    background: transparent;
+    color: var(--clr-secondary);
+    border: none;
+    cursor: pointer;
+}
+
+.btn--color-mode:hover,
+.btn--color-mode:focus {
+    color: var(--clr-text);
+}
+
+/*  */
+
 footer {
     width: 100%;
     min-height: 5em;
