@@ -314,6 +314,11 @@ img, .img {
     opacity: 1;
 }
 
+@media (prefers-reduced-motion) {
+    .animate {
+        transition: none;
+    }   
+}
 
 footer {
     width: 100%;
