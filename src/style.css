@@ -25,9 +25,23 @@
     src: url(./assets/fonts/Trirong/Trirong-SemiBold.ttf);
 }
 
-
 :root {
-    /* colors */
+    /* font families */
+    --ff-body: 'Rubik'; 
+    --ff-display-black: 'Trirong Black';
+    --ff-display-semibold: 'Trirong Semibold';
+    --ff-display-bold: 'Trirong Bold';
+}
+
+.dark-mode {
+    --clr-bg-main: #051d41;
+    --clr-text: #e0c5d4;
+    --clr-secondary: #aba1d2;
+    --clr-accent: #AEA4D6;
+    --clr-accent-light: #06295e;
+}
+
+.light-mode {
     --clr-bg-main: #F4FFF1;
     --clr-text: #0A3370;
     --clr-secondary: #6E629C;
@@ -36,23 +50,8 @@
     --clr-accent-light: #EBF6F2;
     --clr-highlight: #F0BDC6;
     --clr-highlight-light: #f0bdc682;
-
-    /* font families */
-    --ff-body: 'Rubik'; 
-    --ff-display-black: 'Trirong Black';
-    --ff-display-semibold: 'Trirong Semibold';
-    --ff-display-bold: 'Trirong Bold';
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --clr-bg-main: #051d41;
-        --clr-text: #e0c5d4;
-        --clr-secondary: #aba1d2;
-        --clr-accent: #AEA4D6;
-        --clr-accent-light: #06295e;
-    }
-}
 
 body {
     color: var(--clr-text);
@@ -359,6 +358,35 @@ input, textarea {
     }   
 }
 
+/* light/dark mode icons */
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 40
+}
+
+.color-mode-container {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.btn--color-mode {
+    background: transparent;
+    color: var(--clr-secondary);
+    border: none;
+    cursor: pointer;
+}
+
+.btn--color-mode:hover {
+    color: var(--clr-text);
+}
+
+/*  */
+
 footer {
     width: 100%;
     min-height: 5em;
@@ -373,6 +401,14 @@ footer {
     .nav__links {
         flex-direction: row;
         gap: 5rem;
+    }
+
+    .color-mode-container {
+        position: static;
+    }
+
+    .btn--color-mode {
+        margin-left: 2.5rem;
     }
 
     .section--center {
