@@ -357,6 +357,9 @@ input, textarea {
     .animate {
         transition: none;
     }   
+    .hero__text.animate {
+        transition: none;
+    }
 }
 
 footer {
