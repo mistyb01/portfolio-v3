@@ -175,10 +175,6 @@ img, .img {
     padding-top: 7rem;
 }
 
-.hero__cloud {
-
-}
-
 .hero__wrapper {
     color: var(--clr-secondary);
     padding-top: 8rem;
@@ -211,6 +207,12 @@ img, .img {
 
 
 /* ABOUT */
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 
 .body-text--about {
     padding: 2rem;
@@ -338,13 +340,8 @@ footer {
         padding-top: 8rem;
     }
 
-    .hero__cloud {
-
-    }    
-
     .about__content {
-        display: flex;
-        gap: 2rem;
+        flex-direction: row;
     }
 
     .tech__container {
