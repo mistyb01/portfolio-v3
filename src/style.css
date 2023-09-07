@@ -305,6 +305,12 @@ li::marker{
     gap: 2.5rem;
 }
 
+.project__tech span:not(:last-child):after {
+    content: "|";
+    opacity: 0.6;
+    margin: 0 0.5rem;
+}
+
 .svg-icon {
     fill: var(--clr-secondary);
 }
