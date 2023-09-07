@@ -105,6 +105,7 @@ a {
 
 .body-text--light {
     color: var(--clr-secondary);
+    font-size: 1rem;
 }
 
 .text-emphasize {
@@ -137,6 +138,7 @@ img, .img {
     border-radius: 4px;
     color: var(--clr-secondary);
     background-color: transparent;
+    text-decoration: none;
 }
 
 .btn--lg {
@@ -249,7 +251,7 @@ li::marker{
 }
 
 .body-text--about {
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--clr-accent-light);
     border-radius: 8px;
 }
@@ -310,6 +312,11 @@ li::marker{
     flex-direction: column;
     justify-content: space-between;
     gap: 2.5rem;
+}
+
+.project__tech {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project__tech span:not(:last-child):after {
@@ -435,6 +442,10 @@ footer {
 
     .about__content {
         flex-direction: row;
+    }
+
+    .body-text--about {
+        padding: 2rem;
     }
 
     .tech__container {
