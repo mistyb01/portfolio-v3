@@ -56,7 +56,7 @@ body {
     color: var(--clr-text);
     background-color: var(--clr-bg-main);
     font-size: 1.125rem;
-    font-family: var(--ff-body);
+    font-family: var(--ff-body), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     position: relative;
 }
@@ -215,14 +215,14 @@ li::marker{
 }
 
 .hero__text--lg {
-    font-family: var(--ff-display-black);
+    font-family: var(--ff-display-black), 'Times New Roman', Times, serif;
     line-height: 125.4%;
     color: var(--clr-text);
 }
 
 .hero__text--md {
     color: var(--clr-accent);
-    font-family: var(--ff-display-semibold);
+    font-family: var(--ff-display-semibold), 'Times New Roman', Times, serif;
     font-size: 0.8em;
     margin-bottom: 2rem;
 }
