@@ -31,17 +31,7 @@
     --ff-display-black: 'Trirong Black';
     --ff-display-semibold: 'Trirong Semibold';
     --ff-display-bold: 'Trirong Bold';
-}
-
-.dark-mode {
-    --clr-bg-main: #051d41;
-    --clr-text: #e0c5d4;
-    --clr-secondary: #aba1d2;
-    --clr-accent: #AEA4D6;
-    --clr-accent-light: #06295e;
-}
-
-.light-mode {
+    /* light mode colors */
     --clr-bg-main: #F4FFF1;
     --clr-text: #0A3370;
     --clr-secondary: #6E629C;
@@ -52,6 +42,15 @@
     --clr-highlight-light: #f0bdc682;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-bg-main: #051d41;
+        --clr-text: #e0c5d4;
+        --clr-secondary: #aba1d2;
+        --clr-accent: #AEA4D6;
+        --clr-accent-light: #06295e;
+    }
+}
 
 body {
     color: var(--clr-text);
@@ -278,7 +277,7 @@ li::marker{
 
 .img--project {
     width: 25rem;
-    border: 2px solid var(--clr-text);
+    border: 1px solid var(--clr-text);
     border-radius: 8px;
 }
 
