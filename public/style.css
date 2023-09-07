@@ -173,8 +173,12 @@ img, .img {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding-right: 1rem;
     list-style-image: url(./assets/svg/four-point-icon.svg);
+}
+
+.nav__links a {
+    margin-left: 0.5rem;
+
 }
 
 li::marker{

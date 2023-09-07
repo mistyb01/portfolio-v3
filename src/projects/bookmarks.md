@@ -1,7 +1,7 @@
 ---
 title: Web Collector
 tags: ["project"]
-imageSrc: ./assets/img/webcollector.png
+imageSrc: ./assets/img/webcollector-preview.webp
 imageAlt: a timer interface
 description: A bookmark manager for organizing your links with categories and tags.
 techStack: ["react", "typescript"]
