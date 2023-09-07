@@ -1,0 +1,148 @@
+---
+title: Misty Becker | Front-end Developer
+layout: "base.njk"
+---
+
+<main>
+  <section class="section hero" id="hero">
+    <div class="section--center hero__wrapper">
+      <p class="hero__text hero__text--md animate">Hello!</p>
+      <p class="hero__text hero__text--lg animate">I'm Misty,</p>
+      <p class="hero__text hero__text--lg animate">a front-end developer.</p>
+
+      <p class="hero__text hero__text--sm animate">
+        I strive for a kinder, more accessible web.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--center animate" id="about">
+    <h1 class="h1">About me</h1>
+    <div class="content-wrapper">
+      <article class="about__content">
+        <img
+          src="./assets/img/misty_headshot.PNG"
+          alt="A half asian woman in the sunlight"
+          class="img img--about"
+        />
+        <div class="subsection body-text body-text--about">
+          <p>
+            Thank you for stopping by! I'm Misty, and I'm a developer who is
+            passionate about bringing beautiful designs to life, without
+            compromising on accessibility and user experience.
+          </p>
+          <p>
+            I graduated from University of Washington in 2022, with a degree in
+            Informatics. I've since been active in the non-profit space--helping
+            to get a budding tech-for-good organization up and running!
+          </p>
+          <p>
+            My career is just beginning, and I'm excited to continue learning
+            from here. I'm seeking full-time work, and am open to working
+            remotely, or on-site in the greater Seattle area.
+          </p>
+        </div>
+      </article>
+
+      <article class="subsection">
+        <h2 class="subheading">Technologies I use</h2>
+
+        <div class="tech__container">
+          <article class="subsection">
+            <p class="text-emphasize">Fundamental</p>
+            <ul class="chip-wrapper">
+              <li class="chip">HTML</li>
+              <li class="chip">CSS</li>
+              <li class="chip">JAVASCRIPT</li>
+              <li class="chip">GIT</li>
+            </ul>
+          </article>
+
+          <article class="subsection">
+            <p class="text-emphasize">Frameworks and tools</p>
+            <ul class="chip-wrapper">
+              <li class="chip">REACT</li>
+              <li class="chip">NEXT JS</li>
+              <li class="chip">TYPESCRIPT</li>
+              <li class="chip">SASS</li>
+              <li class="chip">MATERIAL UI</li>
+              <li class="chip">TAILWIND</li>
+              <li class="chip">ELEVENTY</li>
+              <li class="chip">SANITY</li>
+            </ul>
+          </article>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--center animate" id="work">
+    <h1 class="h1 heading-space-lg">Recent work</h1>
+    <div class="content-wrapper">
+      {%- for project in collections.project -%}
+        {% include 'projectCard.njk' %}
+      {%- endfor -%}
+    </div>
+  </section>
+
+  <section class="section section--center animate" id="contact">
+    <h1 class="h1 heading-space-lg">Contact</h1>
+    <div class="content-wrapper">
+      <p class="text-body heading-space-lg">
+        I’d love to meet you! Feel free to
+        <a href="mailto:mistyb140@gmail.com" role="link">email</a> me, reach out
+        on
+        <a
+          href="https://www.linkedin.com/in/misty-becker/"
+          target="_blank"
+          role="link"
+          >linkedin</a
+        >, or use the form below.
+      </p>
+      <form
+        aria-label="send message"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="f04d7514-6621-4a45-9448-5186fc706ecd"
+        />
+        <div class="subsection form">
+          <div class="form__field">
+            <label class="form__label" for="name">Name</label>
+            <input
+              class="form__input form__input--sm"
+              type="text"
+              name="name"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="email">Email</label>
+            <input
+              class="form__input form__input--sm"
+              type="text"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="message">Message</label>
+            <textarea
+              class="form__input form__input--lg"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <div class="h-captcha" data-captcha="true"></div>
+          <button class="btn btn--form btn--lg" type="submit">
+            Submit Form
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
