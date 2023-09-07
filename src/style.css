@@ -7,22 +7,26 @@
 
 @font-face {
     font-family: 'Rubik';
-    src: url(./assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+    src: url(/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'Trirong Black';
-    src: url(./assets/fonts/Trirong/Trirong-Black.ttf);
+    src: url(/assets/fonts/Trirong/Trirong-Black.ttf);
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'Trirong Bold';
-    src: url('./assets/fonts/Trirong/Trirong-Bold.ttf');
+    src: url(/assets/fonts/Trirong/Trirong-Bold.ttf);
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'Trirong SemiBold';
-    src: url(./assets/fonts/Trirong/Trirong-SemiBold.ttf);
+    src: url(/assets/fonts/Trirong/Trirong-SemiBold.ttf);
+    font-display: optional;
 }
 
 :root {
@@ -31,17 +35,7 @@
     --ff-display-black: 'Trirong Black';
     --ff-display-semibold: 'Trirong Semibold';
     --ff-display-bold: 'Trirong Bold';
-}
-
-.dark-mode {
-    --clr-bg-main: #051d41;
-    --clr-text: #e0c5d4;
-    --clr-secondary: #aba1d2;
-    --clr-accent: #AEA4D6;
-    --clr-accent-light: #06295e;
-}
-
-.light-mode {
+    /* light mode colors */
     --clr-bg-main: #F4FFF1;
     --clr-text: #0A3370;
     --clr-secondary: #6E629C;
@@ -52,12 +46,21 @@
     --clr-highlight-light: #f0bdc682;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-bg-main: #051d41;
+        --clr-text: #e0c5d4;
+        --clr-secondary: #aba1d2;
+        --clr-accent: #AEA4D6;
+        --clr-accent-light: #06295e;
+    }
+}
 
 body {
     color: var(--clr-text);
     background-color: var(--clr-bg-main);
     font-size: 1.125rem;
-    font-family: var(--ff-body);
+    font-family: var(--ff-body), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     position: relative;
 }
@@ -102,6 +105,7 @@ a {
 
 .body-text--light {
     color: var(--clr-secondary);
+    font-size: 1rem;
 }
 
 .text-emphasize {
@@ -134,6 +138,7 @@ img, .img {
     border-radius: 4px;
     color: var(--clr-secondary);
     background-color: transparent;
+    text-decoration: none;
 }
 
 .btn--lg {
@@ -174,8 +179,12 @@ img, .img {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding-right: 1rem;
     list-style-image: url(./assets/svg/four-point-icon.svg);
+}
+
+.nav__links a {
+    margin-left: 0.5rem;
+
 }
 
 li::marker{
@@ -212,14 +221,14 @@ li::marker{
 }
 
 .hero__text--lg {
-    font-family: var(--ff-display-black);
+    font-family: var(--ff-display-black), 'Times New Roman', Times, serif;
     line-height: 125.4%;
     color: var(--clr-text);
 }
 
 .hero__text--md {
     color: var(--clr-accent);
-    font-family: var(--ff-display-semibold);
+    font-family: var(--ff-display-semibold), 'Times New Roman', Times, serif;
     font-size: 0.8em;
     margin-bottom: 2rem;
 }
@@ -242,7 +251,7 @@ li::marker{
 }
 
 .body-text--about {
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--clr-accent-light);
     border-radius: 8px;
 }
@@ -278,7 +287,7 @@ li::marker{
 
 .img--project {
     width: 25rem;
-    border: 2px solid var(--clr-text);
+    border: 1px solid var(--clr-text);
     border-radius: 8px;
 }
 
@@ -303,6 +312,11 @@ li::marker{
     flex-direction: column;
     justify-content: space-between;
     gap: 2.5rem;
+}
+
+.project__tech {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project__tech span:not(:last-child):after {
@@ -428,6 +442,10 @@ footer {
 
     .about__content {
         flex-direction: row;
+    }
+
+    .body-text--about {
+        padding: 2rem;
     }
 
     .tech__container {
