@@ -134,9 +134,9 @@ img, .img {
 /* button */
 
 .btn {
-    border: 2px solid var(--clr-secondary);
+    border: 2px solid var(--clr-text);
     border-radius: 4px;
-    color: var(--clr-secondary);
+    color: var(--clr-text);
     background-color: transparent;
     text-decoration: none;
 }
@@ -326,7 +326,7 @@ li::marker{
 }
 
 .svg-icon {
-    fill: var(--clr-secondary);
+    fill: var(--clr-text);
 }
 
 /* form */
