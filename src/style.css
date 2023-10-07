@@ -214,10 +214,6 @@ li::marker{
 
 /* fade-in animation delays */
 
-.hero__text:nth-child(4) {
-    transition-delay: 750ms;
-}
-
 .hero__text--lg {
     font-family: var(--ff-display-black), 'Times New Roman', Times, serif;
     line-height: 125.4%;
