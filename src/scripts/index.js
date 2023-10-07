@@ -13,3 +13,10 @@ document.querySelectorAll('.animate').forEach((i) => {
     }
 })
 
+// DARK/LIGHT MODE TOGGLE
+const modeToggleBtn = document.querySelector('.mode-toggle-btn');
+
+modeToggleBtn.addEventListener('click', () => {
+    console.log('h')
+    document.body.classList.toggle('dark')
+})

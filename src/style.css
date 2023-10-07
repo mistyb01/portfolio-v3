@@ -46,14 +46,12 @@
     --clr-highlight-light: #f0bdc682;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --clr-bg-main: #051d41;
-        --clr-text: #e0c5d4;
-        --clr-secondary: #aba1d2;
-        --clr-accent: #AEA4D6;
-        --clr-accent-light: #06295e;
-    }
+.dark {
+    --clr-bg-main: #051d41;
+    --clr-text: #e0c5d4;
+    --clr-secondary: #aba1d2;
+    --clr-accent: #AEA4D6;
+    --clr-accent-light: #06295e;
 }
 
 body {
