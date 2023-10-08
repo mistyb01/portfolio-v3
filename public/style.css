@@ -201,6 +201,8 @@ li::marker{
 
 .mode-toggle-btn {
     order: 1;
+    background-color: transparent;
+    border: none;
 }
 
 /* HERO */
@@ -330,6 +332,10 @@ li::marker{
     fill: var(--clr-text);
 }
 
+.svg-icon-light {
+    fill: var(--clr-secondary);
+}
+
 /* form */
 
 input, textarea {
@@ -430,9 +436,6 @@ footer {
         order: 1;
     }
 
-    /* .mode-toggle-btn {
-        margin-bottom: 1;
-    } */
 
     .color-mode-container {
         position: static;
