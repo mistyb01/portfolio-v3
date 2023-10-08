@@ -350,8 +350,13 @@ input, textarea {
     font-size: inherit;
 }
 
+
 .form__label {
     display: block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--clr-secondary);
 }
 
 .form__input {
@@ -368,11 +373,17 @@ input, textarea {
     height: 10rem;
 }
 
+.form__field + .form__field {
+    margin-top: 2rem;
+}
+
 .btn--form {
     align-self: flex-start;
     background-color: var(--clr-secondary);
     color: var(--clr-bg-main);
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+    border: none;
+    letter-spacing: 0.125ch;
 }
 
 /* for section fade transitions */
