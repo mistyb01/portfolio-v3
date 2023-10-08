@@ -203,6 +203,7 @@ li::marker{
     order: 1;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 /* HERO */
