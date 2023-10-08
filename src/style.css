@@ -33,7 +33,7 @@
     /* font families */
     --ff-body: 'Rubik'; 
     --ff-display-black: 'Trirong Black';
-    --ff-display-semibold: 'Trirong Semibold';
+    --ff-display-semibold: 'Trirong SemiBold';
     --ff-display-bold: 'Trirong Bold';
     /* light mode colors */
     --clr-bg-main: #F4FFF1;
@@ -60,7 +60,7 @@
 body {
     color: var(--clr-text);
     background-color: var(--clr-bg-main);
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: var(--ff-body), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     position: relative;
@@ -100,6 +100,20 @@ a {
     color: var(--clr-secondary);
 }
 
+.intro__title {
+    font-family: 'Trirong Bold';
+    font-size: 1.5rem;
+    color: var(--clr-text);
+    margin-bottom: 1rem;
+}
+
+.intro__body {
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: 'Rubik';
+    color: var(--clr-secondary);
+}
+
 .body-text {
     line-height: 175%;
 }
@@ -115,7 +129,7 @@ a {
 }
 
 .subheading {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .margin-bottom-lg {
@@ -216,20 +230,10 @@ li::marker{
     aspect-ratio: 1/1;
 }
 
-/* HERO */
-.hero {
-    min-height: min(100vh, 1000px);
-    padding-top: 7rem;
-}
+/* intro header */
 
-.hero__wrapper {
-    color: var(--clr-secondary);
-    padding-top: 8rem;
-    font-size: 3rem;
-}
-
-.hero__text.animate {
-    transition: 1s ease-in-out opacity;
+.intro-header {
+    margin-top: 2.5rem;
 }
 
 /* fade-in animation delays */
@@ -484,7 +488,7 @@ footer {
     }
 
     .section--center {
-        max-width: 950px;
+        max-width: 900px;
     }
 
     .hero__wrapper {
