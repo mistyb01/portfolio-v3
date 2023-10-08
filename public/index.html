@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Misty Becker | Front-end Developer</title>
-     <link rel="preload" href="/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
-     <link rel="preload" href="/assets/fonts/Trirong/Trirong-Black.ttf" as="font" type="font/ttf" crossorigin>
-     <link rel="preload" href="/assets/fonts/Trirong/Trirong-Bold.ttf" as="font" type="font/ttf" crossorigin>
-     <link rel="preload" href="/assets/fonts/Trirong/Trirong-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+     <link rel="preload" href="/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+     <link rel="preload" href="/assets/fonts/Trirong/Trirong-Black.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+     <link rel="preload" href="/assets/fonts/Trirong/Trirong-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+     <link rel="preload" href="/assets/fonts/Trirong/Trirong-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script defer src="../scripts/index.js"></script>
+    <script src="../scripts/svg-inject.min.js"></script>
   </head>
   <body>
     <nav class="section--center nav__container">
@@ -22,22 +23,24 @@
       <a class="link link--nav h3" href="#contact" role="link">Contact</a>
     </li>
   </ul>
+      <button class="mode-toggle-btn">
+    </button>
 </nav>
     
 <main>
   <section class="section hero" id="hero">
-    <div class="section--center hero__wrapper">
-      <p class="hero__text hero__text--md animate">Hello!</p>
-      <p class="hero__text hero__text--lg animate">I'm Misty,</p>
-      <p class="hero__text hero__text--lg animate">a front-end developer.</p>
+    <div class="section--center hero__wrapper animate">
+      <p class="hero__text hero__text--md">Hello!</p>
+      <p class="hero__text hero__text--lg">I'm Misty,</p>
+      <p class="hero__text hero__text--lg">a front-end developer.</p>
 
-      <p class="hero__text hero__text--sm animate">
+      <p class="hero__text hero__text--sm">
         I strive for a kinder, more accessible web.
       </p>
     </div>
   </section>
 
-  <section class="section section--center animate" id="about">
+  <section class="section section--center" id="about">
     <h1 class="h1">About me</h1>
     <div class="content-wrapper">
       <article class="about__content">
@@ -92,7 +95,7 @@
     </div>
   </section>
 
-  <section class="section section--center animate" id="work">
+  <section class="section section--center" id="work">
     <h1 class="h1 heading-space-lg">Recent work</h1>
     <div class="content-wrapper"><article class="project">
     <img src=./assets/img/webcollector-preview.webp alt=a timer interface class="img img--project" />
@@ -183,7 +186,7 @@
 </article></div>
   </section>
 
-  <section class="section section--center animate" id="contact">
+  <section class="section section--center" id="contact">
     <h1 class="h1 heading-space-lg">Contact</h1>
     <div class="content-wrapper">
       <p class="text-body heading-space-lg">
@@ -236,7 +239,7 @@
           </div>
           <div class="h-captcha" data-captcha="true"></div>
           <button class="btn btn--form btn--lg" type="submit">
-            Submit Form
+            Send message
           </button>
         </div>
       </form>

@@ -8,25 +8,25 @@
 @font-face {
     font-family: 'Rubik';
     src: url(/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
-    font-display: optional;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Trirong Black';
     src: url(/assets/fonts/Trirong/Trirong-Black.ttf);
-    font-display: optional;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Trirong Bold';
     src: url(/assets/fonts/Trirong/Trirong-Bold.ttf);
-    font-display: optional;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Trirong SemiBold';
     src: url(/assets/fonts/Trirong/Trirong-SemiBold.ttf);
-    font-display: optional;
+    font-display: block;
 }
 
 :root {
@@ -38,22 +38,23 @@
     /* light mode colors */
     --clr-bg-main: #F4FFF1;
     --clr-text: #0A3370;
+    --clr-text-light: #0a33707f;
     --clr-secondary: #6E629C;
     --clr-accent: #7B7C9F;
     --clr-accent2: #CFDBF4;
     --clr-accent-light: #EBF6F2;
-    --clr-highlight: #F0BDC6;
+    --clr-highlight: #b260ff;
     --clr-highlight-light: #f0bdc682;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --clr-bg-main: #051d41;
-        --clr-text: #e0c5d4;
-        --clr-secondary: #aba1d2;
-        --clr-accent: #AEA4D6;
-        --clr-accent-light: #06295e;
-    }
+.dark {
+    --clr-bg-main: #051d41;
+    --clr-text: #e0c5d4;
+    --clr-text-light: #e0c5d486;
+    --clr-secondary: #aba1d2;
+    --clr-accent: #AEA4D6;
+    --clr-accent-light: #06295e;
+    --clr-highlight: #ffdce2;
 }
 
 body {
@@ -134,11 +135,12 @@ img, .img {
 /* button */
 
 .btn {
-    border: 2px solid var(--clr-secondary);
+    border: 2px solid var(--clr-text);
     border-radius: 4px;
-    color: var(--clr-secondary);
+    color: var(--clr-text);
     background-color: transparent;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .btn--lg {
@@ -169,8 +171,11 @@ img, .img {
     position: absolute;
     width: var(--max-w-desktop);
     display: flex;
+    gap: 2rem;
+    flex-direction: column;
     justify-content: flex-end;
-    margin: 2rem auto;
+    align-items: flex-end;
+    margin: 1rem auto;
     left: 0;
     right: 0;
 }
@@ -180,11 +185,11 @@ img, .img {
     flex-direction: column;
     gap: 1.5rem;
     list-style-image: url(./assets/svg/four-point-icon.svg);
+    order: 2;
 }
 
 .nav__links a {
     margin-left: 0.5rem;
-
 }
 
 li::marker{
@@ -196,6 +201,19 @@ li::marker{
     display: flex;
     align-items: center;
     gap: 0.75rem;
+}
+
+.mode-toggle-btn {
+    order: 1;
+    border: none;
+    cursor: pointer;
+    background-color: var(--clr-accent-light);
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
 }
 
 /* HERO */
@@ -215,10 +233,6 @@ li::marker{
 }
 
 /* fade-in animation delays */
-
-.hero__text:nth-child(4) {
-    transition-delay: 750ms;
-}
 
 .hero__text--lg {
     font-family: var(--ff-display-black), 'Times New Roman', Times, serif;
@@ -326,6 +340,10 @@ li::marker{
 }
 
 .svg-icon {
+    fill: var(--clr-text);
+}
+
+.svg-icon-light {
     fill: var(--clr-secondary);
 }
 
@@ -336,8 +354,13 @@ input, textarea {
     font-size: inherit;
 }
 
+
 .form__label {
     display: block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--clr-secondary);
 }
 
 .form__input {
@@ -346,6 +369,7 @@ input, textarea {
     padding: 0.5rem 1rem;
     background-color: transparent;
     font-family: var(--ff-body);
+    color: var(--clr-secondary);
 }
 
 .form__input--sm { width: min(300px, 100%); }
@@ -354,11 +378,31 @@ input, textarea {
     height: 10rem;
 }
 
+.form__input:focus {
+    border-color: var(--clr-text);
+    color: var(--clr-text);
+    outline: none;
+}
+
+.form__field {
+    &:focus-within {
+        .form__label {
+            color: var(--clr-highlight);
+        }
+    }
+}
+
+.form__field + .form__field {
+    margin-top: 2rem;
+}
+
 .btn--form {
     align-self: flex-start;
     background-color: var(--clr-secondary);
     color: var(--clr-bg-main);
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+    border: none;
+    letter-spacing: 0.125ch;
 }
 
 /* for section fade transitions */
@@ -418,10 +462,18 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .nav__container {
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+    }
+
     .nav__links {
         flex-direction: row;
         gap: 5rem;
+        order: 1;
     }
+
 
     .color-mode-container {
         position: static;
