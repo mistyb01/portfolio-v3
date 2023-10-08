@@ -167,7 +167,10 @@ img, .img {
     position: absolute;
     width: var(--max-w-desktop);
     display: flex;
+    gap: 2rem;
+    flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-end;
     margin: 2rem auto;
     left: 0;
     right: 0;
@@ -178,11 +181,11 @@ img, .img {
     flex-direction: column;
     gap: 1.5rem;
     list-style-image: url(./assets/svg/four-point-icon.svg);
+    order: 2;
 }
 
 .nav__links a {
     margin-left: 0.5rem;
-
 }
 
 li::marker{
@@ -194,6 +197,10 @@ li::marker{
     display: flex;
     align-items: center;
     gap: 0.75rem;
+}
+
+.mode-toggle-btn {
+    order: 1;
 }
 
 /* HERO */
@@ -412,10 +419,20 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .nav__container {
+        flex-direction: row;
+        align-items: center;
+    }
+
     .nav__links {
         flex-direction: row;
         gap: 5rem;
+        order: 1;
     }
+
+    /* .mode-toggle-btn {
+        margin-bottom: 1;
+    } */
 
     .color-mode-container {
         position: static;
