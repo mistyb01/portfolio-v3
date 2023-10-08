@@ -38,6 +38,7 @@
     /* light mode colors */
     --clr-bg-main: #F4FFF1;
     --clr-text: #0A3370;
+    --clr-text-light: #0a33707f;
     --clr-secondary: #6E629C;
     --clr-accent: #7B7C9F;
     --clr-accent2: #CFDBF4;
@@ -49,6 +50,7 @@
 .dark {
     --clr-bg-main: #051d41;
     --clr-text: #e0c5d4;
+    --clr-text-light: #e0c5d486;
     --clr-secondary: #aba1d2;
     --clr-accent: #AEA4D6;
     --clr-accent-light: #06295e;
@@ -367,6 +369,7 @@ input, textarea {
     padding: 0.5rem 1rem;
     background-color: transparent;
     font-family: var(--ff-body);
+    color: var(--clr-secondary);
 }
 
 .form__input--sm { width: min(300px, 100%); }
@@ -376,8 +379,8 @@ input, textarea {
 }
 
 .form__input:focus {
-    border-color: var(--clr-highlight);
-    color: var(--clr-highlight);
+    border-color: var(--clr-text);
+    color: var(--clr-text);
     outline: none;
 }
 
