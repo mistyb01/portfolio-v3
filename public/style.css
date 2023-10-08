@@ -42,7 +42,7 @@
     --clr-accent: #7B7C9F;
     --clr-accent2: #CFDBF4;
     --clr-accent-light: #EBF6F2;
-    --clr-highlight: #F0BDC6;
+    --clr-highlight: #b260ff;
     --clr-highlight-light: #f0bdc682;
 }
 
@@ -52,6 +52,7 @@
     --clr-secondary: #aba1d2;
     --clr-accent: #AEA4D6;
     --clr-accent-light: #06295e;
+    --clr-highlight: #ffdce2;
 }
 
 body {
@@ -137,6 +138,7 @@ img, .img {
     color: var(--clr-text);
     background-color: transparent;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .btn--lg {
@@ -371,6 +373,20 @@ input, textarea {
 .form__input--lg { 
     width: min(500px, 100%); 
     height: 10rem;
+}
+
+.form__input:focus {
+    border-color: var(--clr-highlight);
+    color: var(--clr-highlight);
+    outline: none;
+}
+
+.form__field {
+    &:focus-within {
+        .form__label {
+            color: var(--clr-highlight);
+        }
+    }
 }
 
 .form__field + .form__field {
