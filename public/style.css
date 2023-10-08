@@ -201,9 +201,15 @@ li::marker{
 
 .mode-toggle-btn {
     order: 1;
-    background-color: transparent;
     border: none;
     cursor: pointer;
+    background-color: var(--clr-accent-light);
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
 }
 
 /* HERO */
