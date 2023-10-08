@@ -98,12 +98,12 @@ a {
 
 .h1 {
     font-family: 'Trirong Bold';
-    color: var(--clr-secondary);
+    color: var(--clr-text);
 }
 
 .intro__title {
     font-family: 'Trirong Bold';
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--clr-text);
     margin-bottom: 2rem;
 }
@@ -159,25 +159,32 @@ img, .img {
 }
 
 .btn--lg {
-    padding: 0.5rem 2rem;
-    font-size: 1.125rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
     gap: 1rem;
 }
 
 .btn--md {
     padding: 0.25rem 0.5rem;
     font-weight: 600;
-    letter-spacing: 0.125ch;
     gap: 0.5rem;
 }
 
 .btn--icon {
     display: flex;
     align-items: center;
-    /* btn--lg styles */
-    padding: 0.5rem 2rem;
-    font-size: 1.125rem;
-    gap: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    gap: 0.5rem;
+}
+
+.btn--form {
+    align-self: flex-start;
+    background-color: var(--clr-secondary);
+    color: var(--clr-bg-main);
+    margin-top: 2.5rem;
+    border: none;
+    /* letter-spacing: 0.125ch; */
 }
 
 /* NAVBAR */
@@ -271,6 +278,7 @@ img, .img {
     color: var(--clr-secondary);
     border: 1px solid var(--clr-secondary);
     padding: 0.5rem 1rem;
+    font-size: 0.9rem;
 }
 
 /* projects */
@@ -370,15 +378,6 @@ input, textarea {
 
 .form__field + .form__field {
     margin-top: 2rem;
-}
-
-.btn--form {
-    align-self: flex-start;
-    background-color: var(--clr-secondary);
-    color: var(--clr-bg-main);
-    margin-top: 2.5rem;
-    border: none;
-    letter-spacing: 0.125ch;
 }
 
 /* for section fade transitions */
@@ -483,15 +482,8 @@ footer {
     }
 
     .project {
-        flex-direction: row-reverse;
+        flex-direction: row;
         gap: 2rem;
-    }
-
-    .btn--icon {
-        padding: 0.25rem 0.5rem;
-        font-size: 1rem;
-        letter-spacing: 0.125ch;
-        gap: 0.5rem;
     }
 
     footer {
