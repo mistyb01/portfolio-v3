@@ -152,6 +152,24 @@ img, .img {
     max-width: 100%;
 }
 
+.img--filter {
+    position: relative;
+}
+
+.img--filter:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,255,0.5);
+}
+
+/* .img--filter:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+} */
+
 /* button */
 
 .btn {
@@ -288,10 +306,20 @@ img, .img {
 
 /* projects */
 
-.img--project {
-    width: 25rem;
+.project-img-container {
+    flex-basis: min(100%, 25rem);
+    aspect-ratio: 16/9;
+    flex-shrink: 0;
     border: 1px solid var(--clr-text);
     border-radius: 8px;
+    overflow: hidden;
+}
+
+.img--project {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project {
