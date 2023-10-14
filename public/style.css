@@ -152,6 +152,24 @@ img, .img {
     max-width: 100%;
 }
 
+.img--filter {
+    position: relative;
+}
+
+.img--filter:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,255,0.5);
+}
+
+/* .img--filter:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+} */
+
 /* button */
 
 .btn {
@@ -288,10 +306,39 @@ img, .img {
 
 /* projects */
 
-.img--project {
-    width: 25rem;
+.project-img-container {
+    flex-basis: min(100%, 25rem);
+    aspect-ratio: 16/9;
+    flex-shrink: 0;
     border: 1px solid var(--clr-text);
     border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-img-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+    transition: 0.25s;
+  }
+
+.dark .project-img-overlay {
+    background: var(--clr-text);
+}
+
+.project-img-overlay:hover {
+    opacity: 0;
+}
+
+
+.img--project {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project {
@@ -320,6 +367,7 @@ img, .img {
 .project__tech {
     display: flex;
     flex-wrap: wrap;
+    font-size: 0.9rem;
 }
 
 .project__tech span:not(:last-child):after {
